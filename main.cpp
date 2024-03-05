@@ -10,7 +10,7 @@ int main()
     res = number1 / number2;
     ostatok = number1 % number2;
 
-    cout << "Îñòàòîê: "<< ostatok << '\n';
-    cout << "Öåëî÷èñëåííîå äåëåíèå: "<< res << '\n';
+    cout << "ĞÑÑ‚Ğ°Ñ‚Ğ¾Ğº: "<< ostatok << '\n';
+    cout << "Ğ¦ĞµĞ»Ğ¾Ñ‡Ğ¸ÑĞ»ĞµĞ½Ğ½Ğ¾Ğµ Ğ´ĞµĞ»ĞµĞ½Ğ¸Ğµ: "<< res << '\n';
     return 0;
 }
