@@ -7,7 +7,7 @@ int main()
     setlocale(0, "Russian");
     for(int i = 1; i < 100; i++){
         if (i % 3 == 0){
-            cout << "×èñëî äåëèòñÿ íà 3: " << i << endl;
+            cout << "Ð§Ð¸ÑÐ»Ð¾ Ð´ÐµÐ»Ð¸Ñ‚ÑÑ Ð½Ð° 3: " << i << endl;
         }
     }
 }
