@@ -8,7 +8,7 @@ int main()
     ofstream file;
     file.open("output.txt");
     int A,B;
-    cout << "Ââåäèòå ÷èñëà A, B (B > A) " << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð° A, B (B > A) " << endl;
     cin >> A >> B;
     for(int i = A; i <= B; ++i) {
         cout << i * 3 << endl;
@@ -16,7 +16,7 @@ int main()
 
     }
     file.close();
-    cout << "Ôàéë áûë çàïèñàí" << endl;
+    cout << "Ð¤Ð°Ð¹Ð» Ð±Ñ‹Ð» Ð·Ð°Ð¿Ð¸ÑÐ°Ð½" << endl;
 
     return 0;
 }
