@@ -14,17 +14,17 @@ public:
 Bucket::Bucket(int vol, int u){
     volume = 8; used = 3;
     volume = vol; used = u;
-    cout << "Îáú¸ì âåäðà: " << volume << endl;
-    cout << "Óæå çàíÿòî: " << used << endl;
+    cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð²ÐµÐ´Ñ€Ð°: " << volume << endl;
+    cout << "Ð£Ð¶Ðµ Ð·Ð°Ð½ÑÑ‚Ð¾: " << used << endl;
 }
-Bucket::~Bucket(){cout << "Âåäðî èñïàðèëîñü O_O" << endl;}
+Bucket::~Bucket(){cout << "Ð’ÐµÐ´Ñ€Ð¾ Ð¸ÑÐ¿Ð°Ñ€Ð¸Ð»Ð¾ÑÑŒ O_O" << endl;}
 void Bucket::flush_bucket(){
     if(used == 0){
-        cout << "Âåäðî óæå ïóñòîå, ìîæåòå ñìåëî èñïîëüçîâàòü!" << endl;
+        cout << "Ð’ÐµÐ´Ñ€Ð¾ ÑƒÐ¶Ðµ Ð¿ÑƒÑÑ‚Ð¾Ðµ, Ð¼Ð¾Ð¶ÐµÑ‚Ðµ ÑÐ¼ÐµÐ»Ð¾ Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÑŒ!" << endl;
     }
     else{
         used = 0;
-        cout << "Âåäðî ïóñòîå" << endl;
+        cout << "Ð’ÐµÐ´Ñ€Ð¾ Ð¿ÑƒÑÑ‚Ð¾Ðµ" << endl;
     }
 }
 void Bucket::fill_bucket(int v){
@@ -32,10 +32,10 @@ void Bucket::fill_bucket(int v){
     rest = volume - rest;
     full = v + used;
     if(full > volume){
-        cout << "Âû çàïîëíèëè âåäðî ïîëíîñòüþ, íî âûëèëîñü: " << full - volume << " ëèòðîâ âîäû" <<endl;
+        cout << "Ð’Ñ‹ Ð·Ð°Ð¿Ð¾Ð»Ð½Ð¸Ð»Ð¸ Ð²ÐµÐ´Ñ€Ð¾ Ð¿Ð¾Ð»Ð½Ð¾ÑÑ‚ÑŒÑŽ, Ð½Ð¾ Ð²Ñ‹Ð»Ð¸Ð»Ð¾ÑÑŒ: " << full - volume << " Ð»Ð¸Ñ‚Ñ€Ð¾Ð² Ð²Ð¾Ð´Ñ‹" <<endl;
     }
     else{
-        cout << "Âåäðî çàïîëíåíî íà: " << full << " ëèòðîâ âîäû" << endl;
+        cout << "Ð’ÐµÐ´Ñ€Ð¾ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¾ Ð½Ð°: " << full << " Ð»Ð¸Ñ‚Ñ€Ð¾Ð² Ð²Ð¾Ð´Ñ‹" << endl;
     }
 }
 
